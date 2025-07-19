@@ -1,0 +1,20 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+
+# SQLite or local DB
+*.sqlite3
+*.db
+
+# Env variable file
+.env
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# My backup files
+bk_*
