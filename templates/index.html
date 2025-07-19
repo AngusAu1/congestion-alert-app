@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Congestion Zone Alert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    #map { height: 90vh; width: 100%; }
+    body { font-family: sans-serif; }
+  </style>
+
+  <!-- Use Flask to import api_key, in order to avoid hard code the api key -->
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&libraries=geometry"></script>
+</head>
+<body>
+  <h2>🚗 Congestion Zone Alert</h2>
+  <div id="map"></div>
+
+  <!-- initial my map -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
